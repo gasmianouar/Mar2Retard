@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "481002095374",
+    "firebase_url": "https://mar2retard.firebaseio.com",
+    "project_id": "mar2retard",
+    "storage_bucket": "mar2retard.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481002095374:android:0380cb247f1cc5fd",
+        "android_client_info": {
+          "package_name": "om.marre2retard.mar2retard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "481002095374-j5krehttincohh6so6mcd6icmdi6nved.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz2mi5PfgJtbJ65BErS6P_0wkZxLLeGgI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481002095374:android:b317caa4a8221b9b",
+        "android_client_info": {
+          "package_name": "com.marre2retard.mar2retard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "481002095374-j5krehttincohh6so6mcd6icmdi6nved.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz2mi5PfgJtbJ65BErS6P_0wkZxLLeGgI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

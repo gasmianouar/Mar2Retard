@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kaki">
+
+    <TextView
+        android:id="@+id/textViewTitleNumTrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:text="N°du train"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/numero_train"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:text="N° train"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTitleDepart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewTitleNumTrain"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Départ"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <AutoCompleteTextView
+        android:id="@+id/gare_depart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitleDepart"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="Départ" />
+
+    <TextView
+        android:id="@+id/textViewTitleArrivee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gare_depart"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Destination"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <AutoCompleteTextView
+        android:id="@+id/gare_arrivee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitleArrivee"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="Destination" />
+
+
+    <TextView
+        android:id="@+id/textViewHoraireDepartTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gare_arrivee"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Heure de Depart"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/heure_depart_spinner"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/gare_arrivee"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+
+        android:layout_marginTop="10dp"
+        android:prompt="@string/spinner_hour_d"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewHeureDepart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gare_arrivee"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginTop="10dp"
+        android:text=" 0h00"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewHeureArriveeAnonncee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewHoraireDepartTitle"
+        android:layout_alignStart="@+id/textViewHoraireDepartTitle"
+
+        android:layout_below="@+id/textViewHoraireDepartTitle"
+        android:layout_marginTop="15dp"
+        android:text="Heure d'arrivée"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/heure_arrivee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewHeureDepart"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text="0h00"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTitleRetard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewHeureArriveeAnonncee"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Retard :"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/retardHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewHeureArriveeAnonncee"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/textViewTitleRetard"
+        android:hint="0"
+
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/titleHhour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heure_arrivee"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/retardHour"
+        android:layout_toRightOf="@+id/retardHour"
+        android:text=" : h"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/retardMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewHeureArriveeAnonncee"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/titleHhour"
+
+        android:layout_toRightOf="@+id/titleHhour"
+        android:hint="0 "
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heure_arrivee"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/retardMinutes"
+        android:layout_toRightOf="@+id/retardMinutes"
+        android:text=" : min"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewHeureEtatTrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitleRetard"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Etat du train"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/commentaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewHeureEtatTrain"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="Commentaire" />
+
+    <RelativeLayout
+        android:id="@+id/layoutListPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/commentaire"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleViewPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp" />
+
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/buttonCemera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/retardHour"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/ic_action_camera" />
+
+    <Button
+        android:id="@+id/buttonMarre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Reclamer"
+        android:textAllCaps="false"
+
+        />
+
+    <Button
+        android:id="@+id/buttonListMarre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Retards"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

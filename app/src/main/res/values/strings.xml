@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Mar2Retard</string>
+    <string name="facebook_id">150897092207826</string>
+    <string name="app_id">1:481002095374:android:b317caa4a8221b9b</string>
+    <string name="login_with_facebook">Connectez vous avec votre compte Facebook</string>
+    <string name="login_with_google">Connectez vous avec votre compte Google</string>
+    <string name="login_with_twitter">Connectez vous avec votre compte twitter</string>
+    <string name="facebook_app_id">150897092207826</string>
+    <string name="fabric.ApiKey">92879f38c356521422f8e3d7930afb1fecd69f1b</string>
+    <string name="spinner_hour_d">Heur départ</string>
+    <string name="psoeudo">psoeudo</string>
+    <string name="depart">depart</string>
+    <string name="arrivee">arrivee</string>
+    <string name="n_train">N° train</string>
+    <string name="date">Date</string>
+    <string name="commentaire">Commentaire</string>
+    <string name="confirme">Confirmé</string>
+    <string name="signalé">Signalé</string>
+</resources>
